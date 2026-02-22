@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="London — a city that gets under your skin. An invitation to discover the streets, soul, and stories of one of the world's great cities.">
+  <title>London — Come and Be Captivated</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Floating nav -->
+  <header class="site-header" id="site-header">
+    <nav aria-label="Primary">
+      <a href="#main-content" class="nav__logo">London</a>
+      <ul class="nav__list" id="primary-nav-list" role="list">
+        <li><a href="#the-city">The City</a></li>
+        <li><a href="#neighbourhoods">Neighbourhoods</a></li>
+        <li><a href="#seasons">Seasons</a></li>
+        <li><a href="#light">Light</a></li>
+        <li><a href="#invitation">Visit</a></li>
+      </ul>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav-list" aria-label="Open navigation menu" hidden>
+        <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <rect y="4" width="22" height="1.8" rx="1" fill="currentColor"/>
+          <rect y="10.1" width="22" height="1.8" rx="1" fill="currentColor"/>
+          <rect y="16.2" width="22" height="1.8" rx="1" fill="currentColor"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <figure class="hero__media">
+        <img
+          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1800&q=85&auto=format&fit=crop"
+          alt="Tower Bridge spanning the Thames at dusk, lit gold against a deep blue sky"
+          width="1800"
+          height="1200"
+          fetchpriority="high"
+        >
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </figure>
+      <div class="hero__content">
+        <p class="hero__eyebrow">51.5074° N, 0.1278° W</p>
+        <h1 id="hero-heading">Some cities you visit.<br><em>London, you feel.</em></h1>
+        <p class="hero__subtext">Eight million stories. Two thousand years of history. One city that never quite lets you go.</p>
+        <a href="#the-city" class="hero__cta" aria-label="Begin the journey through London">Begin the journey</a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <svg width="1" height="48" viewBox="0 0 1 48"><line x1="0.5" y1="0" x2="0.5" y2="48" stroke="currentColor" stroke-opacity="0.6"/></svg>
+      </div>
+    </section>
+
+    <!-- INTRO / PULL QUOTE -->
+    <section class="pull-quote" aria-labelledby="pull-quote-heading">
+      <div class="container container--prose">
+        <h2 id="pull-quote-heading" class="sr-only">An invitation to London</h2>
+        <blockquote class="pull-quote__text" data-reveal>
+          <p>"When a man is tired of London, he is tired of life; for there is in London all that life can afford."</p>
+          <footer><cite>— Samuel Johnson, 1777</cite></footer>
+        </blockquote>
+        <p class="pull-quote__body" data-reveal>
+          He wasn't wrong. More than two centuries on, London remains one of the most alive, most layered, most generously surprising cities on earth. There is no single London — only the one you discover for yourself, street by street, morning by morning, cup of tea by cup of tea.
+        </p>
+      </div>
+    </section>
+
+    <!-- THE CITY -->
+    <section class="editorial" id="the-city" aria-labelledby="the-city-heading">
+      <div class="editorial__media editorial__media--full" data-reveal>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=85&auto=format&fit=crop"
+            alt="Aerial view of the City of London skyline with the Gherkin and modern skyscrapers alongside historic church spires"
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+          <figcaption>The Square Mile — ancient streets, modern skyline</figcaption>
+        </figure>
+      </div>
+      <div class="editorial__body container" data-reveal>
+        <div class="editorial__text">
+          <p class="editorial__label">The City</p>
+          <h2 id="the-city-heading">A city built in layers,<br>each one still breathing</h2>
+          <p>Walk the streets of the City of London and you are walking on Roman roads. The names — Threadneedle Street, Cheapside, Leadenhall — are Medieval. The pubs have been serving ale since before the Great Fire. And yet above it all rise glass towers that catch the morning sun like mirrors held up to the sky.</p>
+          <p>This is what London does better than anywhere. It doesn't erase its past. It builds around it, over it, beside it — so that history and the present are always in conversation, always visible, always part of the same living city.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DUAL IMAGE: Thames -->
+    <section class="mosaic" aria-labelledby="thames-heading">
+      <div class="mosaic__grid" data-reveal>
+        <figure class="mosaic__primary">
+          <img
+            src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=1200&q=85&auto=format&fit=crop"
+            alt="The Thames at sunrise, with the South Bank walkway reflecting soft pink and amber light"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+        <figure class="mosaic__secondary">
+          <img
+            src="https://images.unsplash.com/photo-1543832923-44667a44c804?w=800&q=85&auto=format&fit=crop"
+            alt="A red London double decker bus crossing Westminster Bridge with the Houses of Parliament behind"
+            width="800"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+      </div>
+      <div class="mosaic__caption container" data-reveal>
+        <h2 id="thames-heading">The river at the heart of everything</h2>
+        <p>The Thames isn't just a river — it's the spine of London's story. Thirty-two bridges. Two millennia of trade, war, celebration, and quiet morning walks. Stand on any bank at any hour and the city reveals a different face.</p>
+      </div>
+    </section>
+
+    <!-- NEIGHBOURHOODS -->
+    <section class="neighbourhoods" id="neighbourhoods" aria-labelledby="neighbourhoods-heading">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-label">Neighbourhoods</p>
+          <h2 id="neighbourhoods-heading">Every postcode,<br>a different world</h2>
+          <p class="section-intro">London is not one place. It is thirty-two boroughs, hundreds of villages, thousands of streets — each with its own character, its own rhythms, its own reasons to stay a little longer.</p>
+        </div>
+
+        <ul class="neighbourhood-grid" role="list">
+
+          <li class="neighbourhood-card" data-reveal>
+            <figure class="neighbourhood-card__media">
+              <img
+                src="https://images.unsplash.com/photo-1520016328979-df0af09d8aa8?w=800&q=80&auto=format&fit=crop"
+                alt="Colourful painted terraced houses on Portobello Road in Notting Hill"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <div class="neighbourhood-card__body">
+              <h3>Notting Hill</h3>
+              <p>Pastel-painted terraces, the world's greatest antiques market on a Saturday, and a quiet grandeur that makes you feel you've stumbled into a film set — because, once, you had.</p>
+            </div>
+          </li>
+
+          <li class="neighbourhood-card" data-reveal>
+            <figure class="neighbourhood-card__media">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format&fit=crop"
+                alt="Brick Lane street art and bustling market stalls in East London"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <div class="neighbourhood-card__body">
+              <h3>East London</h3>
+              <p>Brick Lane, Shoreditch, Bethnal Green — where creativity is currency and the next great restaurant is always in a railway arch. Rough edges, brilliant people, the city's restless future.</p>
+            </div>
+          </li>
+
+          <li class="neighbourhood-card" data-reveal>
+            <figure class="neighbourhood-card__media">
+              <img
+                src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800&q=80&auto=format&fit=crop"
+                alt="Greenwich Park with the Royal Observatory and the Canary Wharf skyline in the distance"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <div class="neighbourhood-card__body">
+              <h3>Greenwich</h3>
+              <p>Where time was invented and the world's meridian runs beneath your feet. Stand at the top of the park and the whole of London spreads before you like an answered question.</p>
+            </div>
+          </li>
+
+          <li class="neighbourhood-card" data-reveal>
+            <figure class="neighbourhood-card__media">
+              <img
+                src="https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?w=800&q=80&auto=format&fit=crop"
+                alt="Borough Market with its iron and glass Victorian architecture and food stalls"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <div class="neighbourhood-card__body">
+              <h3>Southwark</h3>
+              <p>Borough Market's centuries of trade. The Tate Modern in a converted power station. The Globe Theatre rebuilt from Elizabethan memory. Culture so dense you could spend a lifetime here.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- FULL BLEED INTERLUDE: Parks -->
+    <section class="interlude" aria-labelledby="parks-heading">
+      <figure class="interlude__media">
+        <img
+          src="https://images.unsplash.com/photo-1551524559-8af4e6624178?w=1800&q=85&auto=format&fit=crop"
+          alt="Hyde Park in autumn, golden leaves covering the path beside the Serpentine lake"
+          width="1800"
+          height="1000"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="interlude__overlay" aria-hidden="true"></div>
+      </figure>
+      <div class="interlude__content container" data-reveal>
+        <p class="section-label">The Parks</p>
+        <h2 id="parks-heading">Eight Royal Parks.<br>Millions of quiet moments.</h2>
+        <p>In a city of eight million, London has somehow preserved vast, beautiful, breathing green spaces at its very heart. Hyde Park. Regent's Park. St. James's. Hampstead Heath. On a warm afternoon, with a book and nowhere to be, they are the finest places on earth.</p>
+      </div>
+    </section>
+
+    <!-- SEASONS -->
+    <section class="seasons" id="seasons" aria-labelledby="seasons-heading">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-label">Through the year</p>
+          <h2 id="seasons-heading">London in every season<br>is London at its best</h2>
+        </div>
+
+        <ol class="season-list" role="list">
+
+          <li class="season" data-reveal>
+            <figure class="season__media">
+              <img
+                src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&q=80&auto=format&fit=crop&crop=center"
+                alt="Cherry blossom trees in full bloom lining a London street in spring"
+                width="900"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <div class="season__body">
+              <h3><span class="season__number" aria-hidden="true">01</span>Spring</h3>
+              <p>Cherry blossom erupts along residential streets in March and April with startling suddenness. The parks fill with people who've been indoors since November, blinking in the light like they've forgotten what warmth felt like. London in spring is an act of collective joy.</p>
+            </div>
+          </li>
+
+          <li class="season season--reverse" data-reveal>
+            <figure class="season__media">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80&auto=format&fit=crop"
+                alt="Londoners relaxing on the grass in a sunny park in summer"
+                width="900"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <div class="season__body">
+              <h3><span class="season__number" aria-hidden="true">02</span>Summer</h3>
+              <p>When the sun stays until nine o'clock, London becomes something else entirely. Rooftop bars fill up at five. The South Bank buzzes. Pimm's appears. The city that spent winter in coats and scarves suddenly remembers it knows how to be happy. Come in July. Bring light clothes and high hopes.</p>
+            </div>
+          </li>
+
+          <li class="season" data-reveal>
+            <figure class="season__media">
+              <img
+                src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?w=900&q=80&auto=format&fit=crop"
+                alt="Golden autumn leaves on trees lining a path in a London park at sunset"
+                width="900"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <div class="season__body">
+              <h3><span class="season__number" aria-hidden="true">03</span>Autumn</h3>
+              <p>Perhaps the most beautiful season. The parks turn amber and rust and deep, burning gold. The air sharpens. The museums, freed from summer queues, become havens again. There's a particular quality of October afternoon light over the Thames that once you've seen it, you carry it with you.</p>
+            </div>
+          </li>
+
+          <li class="season season--reverse" data-reveal>
+            <figure class="season__media">
+              <img
+                src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=900&q=80&auto=format&fit=crop"
+                alt="Christmas lights illuminating Oxford Street at night in winter, reflected in wet pavement"
+                width="900"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              >
+            </figure>
+            <div class="season__body">
+              <h3><span class="season__number" aria-hidden="true">04</span>Winter</h3>
+              <p>London leans into winter beautifully. Christmas lights transform Oxford Street and Carnaby into glowing corridors. Ice rinks appear in the courtyards of Somerset House and the Natural History Museum. Fog, when it comes, makes everything romantic. The pubs are warm. The city is yours.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- LIGHT / ATMOSPHERE -->
+    <section class="light-section" id="light" aria-labelledby="light-heading">
+      <div class="light-grid">
+
+        <figure class="light-grid__item light-grid__item--tall" data-reveal>
+          <img
+            src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=800&q=85&auto=format&fit=crop"
+            alt="St Paul's Cathedral dome rising above the London rooftops at golden hour"
+            width="800"
+            height="1100"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+
+        <div class="light-grid__text" data-reveal>
+          <p class="section-label">The Light</p>
+          <h2 id="light-heading">There is no light<br>quite like London light</h2>
+          <p>Painters have been chasing it for centuries. Turner made it his obsession. It comes through the Thames mist in the early morning, slants between tower blocks at dusk, and turns wet pavements into something close to silver.</p>
+          <p>It is northern light — soft, diffuse, endlessly variable. It makes the city beautiful in ways that have nothing to do with weather.</p>
+        </div>
+
+        <figure class="light-grid__item light-grid__item--wide" data-reveal>
+          <img
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85&auto=format&fit=crop&crop=bottom"
+            alt="London street at twilight with warm lamp post glow and blurred movement of commuters"
+            width="1200"
+            height="600"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+
+        <figure class="light-grid__item" data-reveal>
+          <img
+            src="https://images.unsplash.com/photo-1470219556762-1771e7f9427d?w=800&q=85&auto=format&fit=crop"
+            alt="The London Eye and the Thames at night, reflections glittering on the dark water"
+            width="800"
+            height="600"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- FOOD & CULTURE STRIP -->
+    <section class="culture" aria-labelledby="culture-heading">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-label">Culture & Food</p>
+          <h2 id="culture-heading">The world arrived here<br>and decided to stay</h2>
+          <p class="section-intro">London's greatest achievement isn't its monuments or its history — it's the extraordinary, ongoing project of being home to people from everywhere. That diversity is most deliciously evident in its food, its music, its markets, and its streets.</p>
+        </div>
+
+        <div class="culture-duo" data-reveal>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80&auto=format&fit=crop"
+              alt="A beautifully plated dish at a London restaurant, warm candlelight setting"
+              width="900"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            >
+            <figcaption>London is one of the great restaurant cities of the world</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1584824388899-5a3e1b0e9f72?w=900&q=80&auto=format&fit=crop"
+              alt="The grand interior of the British Museum's Great Court with its iconic glass roof"
+              width="900"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            >
+            <figcaption>Free entry. Two million years of human history. A Tuesday afternoon well spent.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL INVITATION -->
+    <section class="invitation" id="invitation" aria-labelledby="invitation-heading">
+      <figure class="invitation__media">
+        <img
+          src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?w=1800&q=85&auto=format&fit=crop"
+          alt="London skyline at magic hour — the Shard, Tower Bridge and the Thames illuminated against a glowing pink and purple sky"
+          width="1800"
+          height="1100"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="invitation__overlay" aria-hidden="true"></div>
+      </figure>
+      <div class="invitation__content container" data-reveal>
+        <p class="section-label">Your London awaits</p>
+        <h2 id="invitation-heading">Come. Walk slowly.<br>Let the city find you.</h2>
+        <p>There is no checklist for London. No correct order, no essential itinerary, no box to tick. The best version of your visit is the one you didn't plan — the afternoon you got lost and found a market, the morning you woke early and had the Thames to yourself, the pub where a stranger started talking and didn't stop for two hours.</p>
+        <p>London gives itself to those who show up with open eyes and a little time to wander. It rewards patience and rewards curiosity. It has been rewarding both for two thousand years.</p>
+        <p class="invitation__closing"><em>Come and be captivated.</em></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <p class="site-footer__brand">London</p>
+        <p class="site-footer__tagline">51.5074° N, 0.1278° W</p>
+        <p class="site-footer__credit">Photography via <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>. All images used under the Unsplash licence.</p>
+        <p class="site-footer__quote"><em>"The streets of London have their map, but our passions are uncharted."</em><br>— Virginia Woolf</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+
+</body>
+</html>
